@@ -1,0 +1,106 @@
+[I 180430 11:30:57 users:17] {'username': 'yangjiajia', 'password': 'Admin@1233', 'phone': '18730273263', 'email': '123123@qq.com'}
+[I 180430 11:30:57 web:2106] 200 POST /register (::1) 160.26ms
+[I 180430 11:32:51 autoreload:196] /Users/yangjiajia/Desktop/project/tornado/apollo/views/users.py modified; restarting server
+[I 180430 11:33:00 users:18] {'username': 'yangjiajia', 'password': 'Admin@1233', 'phone': '18730273263', 'email': '123123@qq.com'}
+[I 180430 11:33:00 web:2106] 200 POST /register (::1) 157.38ms
+[I 180430 11:33:33 users:18] {'username': 'yangjiajia', 'password': 'Admin@1233', 'phone': '18730273263', 'email': '123123@qq.com'}
+[I 180430 11:33:33 web:2106] 200 POST /register (::1) 154.03ms
+[I 180430 11:33:33 autoreload:196] /Users/yangjiajia/Desktop/project/tornado/apollo/views/users.py modified; restarting server
+[I 180430 11:33:51 users:21] {'username': 'yangjiajia', 'password': 'Admin@1233', 'phone': '18730273263', 'email': '123123@qq.com'}
+[I 180430 11:33:51 web:2106] 200 POST /register (::1) 157.59ms
+[I 180430 11:34:02 users:21] {'username': 'yangjiajia', 'password': 'Admin@1233', 'phone': '18730273263', 'email': '123123@qq.com'}
+[I 180430 11:34:03 web:2106] 200 POST /register (::1) 167.96ms
+[I 180430 11:35:45 users:21] {'username': 'yangjia', 'password': 'Admin@1233', 'phone': '18730273263', 'email': '123123@qq.com'}
+[I 180430 11:35:45 web:2106] 200 POST /register (::1) 284.88ms
+[I 180430 11:43:03 users:21] {u'username': u'yangjia', u'phone': u'18730273263', u'password': u'Admin@1233', u'email': u'123123@qq.com'}
+[E 180430 11:43:03 users:32] must be type, not classobj
+[E 180430 11:43:03 web:1524] Uncaught exception POST /register (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/register', version='HTTP/1.1', remote_ip='::1', headers={'Content-Length': '99', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive', 'Accept': '*/*', 'User-Agent': 'python-requests/2.18.4', 'Host': 'localhost:8000', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/Library/Python/2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/yangjiajia/Desktop/project/tornado/apollo/views/users.py", line 33, in post
+        return self.write(render_412(message=_('The param invalid')))
+      File "/Users/yangjiajia/Desktop/project/tornado/apollo/views/base.py", line 76, in render_412
+        message = render_json(412, message, data)
+      File "/Users/yangjiajia/Desktop/project/tornado/apollo/views/base.py", line 26, in render_json
+        msg = RenderJson(code, message, result)
+      File "/Users/yangjiajia/Desktop/project/tornado/apollo/views/base.py", line 22, in __init__
+        super(RenderJson, self).__init__(code, message, result)
+    TypeError: must be type, not classobj
+[E 180430 11:43:03 web:1946] 500 POST /register (::1) 347.20ms
+[I 180430 11:45:09 autoreload:204] /Users/yangjiajia/Desktop/project/tornado/apollo/views/base.py modified; restarting server
+[I 180430 11:47:04 users:21] {u'username': u'yangjia', u'phone': u'18730273263', u'password': u'Admin@1233', u'email': u'123123@qq.com'}
+[I 180430 11:47:05 web:1946] 200 POST /register (::1) 268.45ms
+[I 180430 11:48:51 users:21] {u'username': u'yangjia', u'phone': u'18730273263', u'password': u'Admin@1233', u'email': u'123123@qq.com'}
+[I 180430 11:48:52 web:1946] 200 POST /register (::1) 316.87ms
+[I 180430 11:49:26 users:21] {u'username': u'yangjia', u'phone': u'18730273263', u'password': u'Admin@1233', u'email': u'123123@qq.com'}
+[I 180430 11:49:26 web:1946] 200 POST /register (::1) 314.61ms
+[I 180430 11:50:00 users:21] {u'username': u'yangjia', u'phone': u'18730273263', u'password': u'Admin@1233', u'email': u'123123@qq.com'}
+[I 180430 11:50:01 web:1946] 200 POST /register (::1) 311.65ms
+[I 180430 11:50:01 autoreload:204] /Users/yangjiajia/Desktop/project/tornado/apollo/views/users.py modified; restarting server
+[I 180430 11:50:08 users:22] {u'username': u'yangjia', u'phone': u'18730273263', u'password': u'Admin@1233', u'email': u'123123@qq.com'}
+[I 180430 11:50:08 web:1946] 200 POST /register (::1) 332.67ms
+[I 180430 11:50:37 users:23] {u'username': u'yangjia', u'phone': u'18730273263', u'password': u'Admin@1233', u'email': u'123123@qq.com'}
+[I 180430 11:50:37 web:1946] 200 POST /register (::1) 300.67ms
+[I 180430 11:51:08 autoreload:204] /Users/yangjiajia/Desktop/project/tornado/apollo/views/users.py modified; restarting server
+[I 180430 11:52:20 users:23] {'username': 'yangjia', 'password': 'Admin@1233', 'phone': '18730273263', 'email': '123123@qq.com'}
+[I 180430 11:52:20 web:2106] 200 POST /register (::1) 281.90ms
+[I 180430 11:54:04 users:23] {'username': 'yangjia', 'password': 'Admin@1233', 'phone': '18730273263', 'email': '123123@qq.com'}
+[I 180430 11:54:04 web:2106] 200 POST /register (::1) 312.05ms
+[E 180430 11:56:41 web:1621] Uncaught exception POST /register (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/register', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/yangjiajia/Desktop/project/tornado/apollo/views/users.py", line 20, in post
+        _ = self.locale.translate
+      File "/usr/local/lib/python3.6/site-packages/tornado/web.py", line 1107, in locale
+        self._locale = self.get_user_locale()
+      File "/Users/yangjiajia/Desktop/project/tornado/apollo/views/users.py", line 12, in get_user_locale
+        print(tornado.locale.Locale.get('zh_CN'))
+      File "/usr/local/lib/python3.6/site-packages/tornado/locale.py", line 264, in get
+        assert code in _supported_locales
+    AssertionError
+[E 180430 11:56:41 web:2106] 500 POST /register (::1) 8.13ms
+[I 180430 11:57:00 users:23] {'username': 'yangjia', 'password': 'Admin@1233', 'phone': '18730273263', 'email': '123123@qq.com'}
+[I 180430 11:57:00 web:2106] 200 POST /register (::1) 297.02ms
+[I 180430 11:57:18 users:24] {'username': 'yangjia', 'password': 'Admin@1233', 'phone': '18730273263', 'email': '123123@qq.com'}
+[I 180430 11:57:18 web:2106] 200 POST /register (::1) 285.51ms
+[E 180430 11:58:00 web:1621] Uncaught exception POST /register (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/register', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/yangjiajia/Desktop/project/tornado/apollo/views/users.py", line 21, in post
+        _ = self.locale.translate
+      File "/usr/local/lib/python3.6/site-packages/tornado/web.py", line 1107, in locale
+        self._locale = self.get_user_locale()
+      File "/Users/yangjiajia/Desktop/project/tornado/apollo/views/users.py", line 12, in get_user_locale
+        print(tornado.locale.Locale.get(1))
+      File "/usr/local/lib/python3.6/site-packages/tornado/locale.py", line 264, in get
+        assert code in _supported_locales
+    AssertionError
+[E 180430 11:58:00 web:2106] 500 POST /register (::1) 2.16ms
+[E 180430 11:58:16 web:1621] Uncaught exception POST /register (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/register', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/yangjiajia/Desktop/project/tornado/apollo/views/users.py", line 21, in post
+        _ = self.locale.translate
+      File "/usr/local/lib/python3.6/site-packages/tornado/web.py", line 1107, in locale
+        self._locale = self.get_user_locale()
+      File "/Users/yangjiajia/Desktop/project/tornado/apollo/views/users.py", line 12, in get_user_locale
+        print(tornado.locale.Locale.get(120))
+      File "/usr/local/lib/python3.6/site-packages/tornado/locale.py", line 264, in get
+        assert code in _supported_locales
+    AssertionError
+[E 180430 11:58:16 web:2106] 500 POST /register (::1) 2.21ms
+[I 180430 12:00:14 autoreload:196] /Users/yangjiajia/Desktop/project/tornado/apollo/views/users.py modified; restarting server
+[I 180430 12:00:29 users:25] {'username': 'yangjia', 'password': 'Admin@1233', 'phone': '18730273263', 'email': '123123@qq.com'}
+[I 180430 12:00:29 web:2106] 200 POST /register (::1) 291.00ms
+[I 180430 12:02:58 users:26] {'username': 'yangjia', 'password': 'Admin@1233', 'phone': '18730273263', 'email': '123123@qq.com'}
+[I 180430 12:02:59 web:2106] 200 POST /register (::1) 309.29ms
+[I 180430 12:07:00 users:27] {'username': 'yangjia', 'password': 'Admin@1233', 'phone': '18730273263', 'email': '123123@qq.com'}
+[I 180430 12:07:00 web:2106] 200 POST /register (::1) 292.91ms
